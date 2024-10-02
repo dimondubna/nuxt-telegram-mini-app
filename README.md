@@ -9,16 +9,17 @@ Make sure to install the dependencies:
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
+
+## Change API url
+
+- Find all `https://pocketbotdev9.com` in the project and replace it to your backend domain.
+
+
+## Bot configuration
+
+- When you create bot, you should set web app url to your front-end url. For more detail, [click here](https://core.telegram.org/bots/webapps#:~:text=To%20enable%20this%20feature%20for,icon%20in%20the%20attachment%20menu.).
+
 
 ## Development Server
 
@@ -27,15 +28,6 @@ Start the development server on `http://localhost:3000`:
 ```bash
 # npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -45,15 +37,6 @@ Build the application for production:
 ```bash
 # npm
 npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
@@ -61,15 +44,4 @@ Locally preview production build:
 ```bash
 # npm
 npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
