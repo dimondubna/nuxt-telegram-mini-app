@@ -1,7 +1,7 @@
 <template>
 <div class="fixed bottom-[10rem] bg-[#000000] w-full rounded-t-2xl max-h-[72vh] overflow-y-auto">
-    <div class="p-4 text-white flex flex-col gap-8">
-    <h1 class="text-2xl font-bold text-center mb-6">Earns</h1>
+    <div class="flex flex-col gap-8 p-4 text-white">
+    <h1 class="mb-6 text-2xl font-bold text-center">Earns</h1>
     <div>
         <div class="flex items-center gap-2 mb-4">
         <IconUsers stroke="1.5" size="26" color="currentColor" />
@@ -17,7 +17,7 @@
                 <img :src="task.icon" :alt="task.title" class="w-6 h-6" />
                 <p class="text-white">{{ task.title }}</p>
                 </div>
-                <p class="text-gray-400 mt-2 text-sm">{{ task.description }}</p>
+                <p class="mt-2 text-sm text-gray-400">{{ task.description }}</p>
             </div>
             <a 
                 :href="task.link" 
@@ -57,7 +57,7 @@ const tasks = [
 const completeTask = async (taskIndex: number) => {
     if (taskIndex < completedTasks.value) return;    
     try {
-        await axios.post('https://punk1210.com/api/complete_task', { task: taskIndex }, {
+        await axios.post('https://ac94-96-44-161-8.ngrok-free.app/api/complete_task', { task: taskIndex }, {
             headers: { Authorization: 'Bearer ' + token }
         });
         completedTasks.value = Number(taskIndex) + 1
@@ -68,7 +68,7 @@ const completeTask = async (taskIndex: number) => {
   
 onMounted(async () => {
 try {
-    const response = await axios.get('https://punk1210.com/api/complete_task', {
+    const response = await axios.get('https://ac94-96-44-161-8.ngrok-free.app/api/complete_task', {
     headers: { Authorization: 'Bearer ' + token }
     });
     completedTasks.value = response.data;

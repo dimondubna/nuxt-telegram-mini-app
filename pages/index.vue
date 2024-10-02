@@ -11,7 +11,7 @@ const username = ref(''); // می‌تونی این رو از سمت سرور ب
 
 onMounted(async () => {
   try {
-    const response = await axios.get('https://punk1210.com/api/tokens', {
+    const response = await axios.get('https://ac94-96-44-161-8.ngrok-free.app/api/tokens', {
       headers: {
         Authorization: 'Bearer ' + token,
       },
