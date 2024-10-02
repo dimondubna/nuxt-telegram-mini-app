@@ -84,6 +84,20 @@ onMounted(async () => {
                 <a href="https://t.me/DepinTech" target="_blank" class="bg-[#25ff8f] text-black px-4 py-2 rounded-full text-sm">Join</a>
             </div>
         </div>
+        
+        <!-- کانال 3-->
+        <div class="bg-[#1a1a1a] p-3 rounded-lg flex flex-col justify-between">
+            <div class="flex items-center justify-between">
+                <div class="flex flex-col gap-1">
+                    <div class="flex items-center gap-2">
+                        <img src="/youtube.png" alt="Youtube" class="w-6 h-6" />
+                        <p class="text-white">Subscribe Youtube </p>
+                    </div>
+                    <p class="text-gray-400 mt-2 text-sm">Earn 50 tokens for subscribe</p>
+                </div>
+                <a href="https://youtube.com/@depintech/" target="_blank" class="bg-[#25ff8f] text-black px-4 py-2 rounded-full text-sm">Subscribe</a>
+            </div>
+        </div>
 
         <NuxtLink :to="{ name: 'earns', query: {token: token} }" class="bg-[#1a1a1a] p-2 rounded-3xl flex gap-1 justify-center items-center text-sm">
             <span>More earnings</span>
