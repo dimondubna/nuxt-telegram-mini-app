@@ -49,7 +49,7 @@ const tasks = [
     { title: 'Follow us on Twitter', description: 'Earn 100 tokens for following', icon: 'https://img.icons8.com/color/48/000000/twitter--v1.png', link: 'https://x.com/Depin_Tech', buttonText: 'Follow' },
     { title: 'Join us on Channel', description: 'Earn 100 tokens for joining', icon: 'https://img.icons8.com/?size=100&id=63306&format=png&color=000000', link: 'https://t.me/DepinTech', buttonText: 'Join' },
     { title: 'Visit our Website', description: 'Earn 50 tokens for visiting', icon: 'https://depintech.org/network.png', link: 'https://depintech.org/', buttonText: 'Visit' },
-    { title: 'Subscribe Youtube', description: 'Earn 50 tokens for subscribe', icon: 'https://ibb.co/nLZZ1XV', link: 'https://youtube.com/@depintech/', buttonText: 'Subscribe' },
+    { title: 'Subscribe Youtube', description: 'Earn 50 tokens for subscribe', icon: '/youtube.png', link: 'https://youtube.com/@depintech/', buttonText: 'Subscribe' },
     { title: 'Like our posts on Twitter', description: 'Earn 50 tokens for liking', icon: 'https://img.icons8.com/color/48/000000/twitter--v1.png', link: 'https://x.com/Depin_Tech/status/1833386488278515812', buttonText: 'Like' },
     { title: 'Like our posts on Twitter', description: 'Earn 50 tokens for liking', icon: 'https://img.icons8.com/color/48/000000/twitter--v1.png', link: 'https://x.com/Depin_Tech/status/1835205999705080181', buttonText: 'Like' },
     { title: 'Like our posts on Twitter', description: 'Earn 50 tokens for liking', icon: 'https://img.icons8.com/color/48/000000/twitter--v1.png', link: 'https://x.com/Depin_Tech/status/1833039250817737188', buttonText: 'Like' },
