@@ -22,7 +22,7 @@ const allData = ref<DataInterface | null>(null);
 
 onMounted(async () => {
   try {
-    const response = await axios.get('https://ac94-96-44-161-8.ngrok-free.app/api/leaderboard', {
+    const response = await axios.get('https://pocketbotdev9.com/api/leaderboard', {
       headers: {
         Authorization: 'Bearer ' + token,
       },

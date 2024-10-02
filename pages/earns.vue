@@ -57,7 +57,7 @@ const tasks = [
 const completeTask = async (taskIndex: number) => {
     if (taskIndex < completedTasks.value) return;    
     try {
-        await axios.post('https://ac94-96-44-161-8.ngrok-free.app/api/complete_task', { task: taskIndex }, {
+        await axios.post('https://pocketbotdev9.com/api/complete_task', { task: taskIndex }, {
             headers: { Authorization: 'Bearer ' + token }
         });
         completedTasks.value = Number(taskIndex) + 1
@@ -68,7 +68,7 @@ const completeTask = async (taskIndex: number) => {
   
 onMounted(async () => {
 try {
-    const response = await axios.get('https://ac94-96-44-161-8.ngrok-free.app/api/complete_task', {
+    const response = await axios.get('https://pocketbotdev9.com/api/complete_task', {
     headers: { Authorization: 'Bearer ' + token }
     });
     completedTasks.value = response.data;

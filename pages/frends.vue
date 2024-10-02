@@ -27,7 +27,7 @@ const token = useRoute().query.token
 // بارگذاری داده‌ها هنگام Mount شدن کامپوننت
 onMounted(async () => {
   try {
-    const response = await axios.get('https://ac94-96-44-161-8.ngrok-free.app/api/invite-code', {
+    const response = await axios.get('https://pocketbotdev9.com/api/invite-code', {
       headers: {
         Authorization: 'Bearer ' + token,
       },
