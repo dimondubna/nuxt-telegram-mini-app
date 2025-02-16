@@ -39,7 +39,7 @@ const token = useRoute().query.token
 const checkLastSpin = async (): Promise<void> => {  
   try {
     const response = await axios.get<{ lastSpin: string }>(
-      'https://pocketbotdev9.com/api/last_spin',
+      'https://25a1-45-91-201-251.ngrok-free.app/api/last_spin',
       {
         headers: {
           Authorization: 'Bearer ' + token
@@ -102,7 +102,7 @@ const valueGenerator = async (angleValue: number): Promise<void> => {
       finalValue.value = `🎉 Congratulations! You won ${i.value} tokens!`;
       
       const response = await axios.post(
-      'https://pocketbotdev9.com/api/spin',
+      'https://25a1-45-91-201-251.ngrok-free.app/api/spin',
       { token_received: i.value },
       {
         headers: {
@@ -223,7 +223,7 @@ const wheelStyle = computed(() => {
 const checkLastSpin = async (): Promise<void> => {
   try {
     const response = await axios.get<boolean>(
-      'https://pocketbotdev9.com/api/last_spin',
+      'https://25a1-45-91-201-251.ngrok-free.app/api/last_spin',
       {
         headers: {
           Authorization: 'Bearer ' + token
@@ -267,7 +267,7 @@ const spinWheel = async (): Promise<void> => {
     result.value = `🎉 Congratulations! You won ${winningPrize!.value} tokens!`;
 
     axios.post(
-      'https://pocketbotdev9.com/api/spin',
+      'https://25a1-45-91-201-251.ngrok-free.app/api/spin',
       { token_received: winningPrize!.value },
       {
         headers: {
@@ -335,7 +335,7 @@ const wheelStyle = computed(() => {
 const checkLastSpin = async (): Promise<void> => {
   try {
     const response = await axios.get<boolean>(
-      'https://pocketbotdev9.com/api/last_spin',
+      'https://25a1-45-91-201-251.ngrok-free.app/api/last_spin',
       {
         headers: {
           Authorization: 'Bearer ' + token,
@@ -377,7 +377,7 @@ const spinWheel = async (): Promise<void> => {
     result.value = `🎉 Congratulations! You won ${winningPrize!.value} tokens!`;
 
     axios.post(
-      'https://pocketbotdev9.com/api/spin',
+      'https://25a1-45-91-201-251.ngrok-free.app/api/spin',
       { token_received: winningPrize!.value },
       {
         headers: {
