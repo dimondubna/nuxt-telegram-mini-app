@@ -58,7 +58,7 @@ const tasks = [
 const completeTask = async (taskIndex: number) => {
     if (taskIndex < completedTasks.value) return;    
     try {
-        await axios.post('https://25a1-45-91-201-251.ngrok-free.app/api/complete_task', { task: taskIndex }, {
+        await axios.post('https://lacewing-learning-externally.ngrok-free.app/api/complete_task', { task: taskIndex }, {
             headers: { Authorization: 'Bearer ' + token }
         });
         completedTasks.value = Number(taskIndex) + 1
@@ -69,7 +69,7 @@ const completeTask = async (taskIndex: number) => {
   
 onMounted(async () => {
 try {
-    const response = await axios.get('https://25a1-45-91-201-251.ngrok-free.app/api/complete_task', {
+    const response = await axios.get('https://lacewing-learning-externally.ngrok-free.app/api/complete_task', {
     headers: { Authorization: 'Bearer ' + token }
     });
     completedTasks.value = response.data;
