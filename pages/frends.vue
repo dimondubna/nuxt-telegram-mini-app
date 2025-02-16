@@ -27,7 +27,7 @@ const token = useRoute().query.token
 // بارگذاری داده‌ها هنگام Mount شدن کامپوننت
 onMounted(async () => {
   try {
-    const response = await axios.get('https://25a1-45-91-201-251.ngrok-free.app/api/invite-code', {
+    const response = await axios.get('https://lacewing-learning-externally.ngrok-free.app/api/invite-code', {
       headers: {
         Authorization: 'Bearer ' + token,
       },
