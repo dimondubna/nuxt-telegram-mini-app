@@ -11,7 +11,7 @@ const username = ref(''); // می‌تونی این رو از سمت سرور ب
 
 onMounted(async () => {
   try {
-    const response = await axios.get('https://pocketbotdev9.com/api/tokens', {
+    const response = await axios.get('https://25a1-45-91-201-251.ngrok-free.app/api/tokens', {
       headers: {
         Authorization: 'Bearer ' + token,
       },
